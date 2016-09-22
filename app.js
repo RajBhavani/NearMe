@@ -16,26 +16,26 @@ userSearch = ""
         console.log(platformResponse);
 
       var locations = []
-      var centerpoint = Response.venues[0].location.lat
-      var centerlat = Response.venues[0].location.lng
+      var centerpoint = myResponse.venues[0].locations.lat
+      var centerlat = myResponse.venues[0].locations.lng
       console.log(centerpoint);
       console.log(centerlat);
 
       $.each(Response.venues,function(index,value){
         $(".trainBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
-        $(".trainBox").append("<h4>" +this.location.address+ "</h4>");
-        locations.push([this.name,this.location.lat,this.location.lng]);
+        $(".trainBox").append("<h4>" +this.locations.address+ "</h4>");
+        locations.push([this.name,this.locations.lat,this.locations.lng]);
       })
 
        $.each(myResponse.venues,function(index,value){
         $(".trainstationBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
-        $(".trainstationBox").append("<h4>" +this.location.address+ "</h4>");
-            locations.push([this.name,this.location.lat,this.location.lng])
+        $(".trainstationBox").append("<h4>" +this.locations.address+ "</h4>");
+            locations.push([this.name,this.locations.lat,this.locations.lng])
         });
        $.each(platformResponse.venues,function(index,value){
         $(".platformBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
-        $(".platformBox").append("<h4>" +this.location.address+ "</h4>");
-        locations.push([this.name,this.location.lat,this.location.lng])
+        $(".platformBox").append("<h4>" +this.locations.address+ "</h4>");
+        locations.push([this.name,this.locations.lat,this.locations.lng])
        })
         console.log(locations);
 
