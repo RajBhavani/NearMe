@@ -15,29 +15,29 @@ userSearch = ""
         var platformResponse = (platform.response);
         console.log(platformResponse);
 
-      var locations = []
-      var centerpoint = myResponse.venues[0].locations.lat
-      var centerlat = myResponse.venues[0].locations.lng
+      var location = []
+      var centerpoint = myResponse.venues[0].location.lat
+      var centerlat = myResponse.venues[0].location.lng
       console.log(centerpoint);
       console.log(centerlat);
 
       $.each(Response.venues,function(index,value){
         $(".trainBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
         $(".trainBox").append("<h4>" +this.locations.address+ "</h4>");
-        locations.push([this.name,this.locations.lat,this.locations.lng]);
+        location.push([this.name,this.location.lat,this.location.lng]);
       })
 
        $.each(myResponse.venues,function(index,value){
         $(".trainstationBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
-        $(".trainstationBox").append("<h4>" +this.locations.address+ "</h4>");
-            locations.push([this.name,this.locations.lat,this.locations.lng])
+        $(".trainstationBox").append("<h4>" +this.location.address+ "</h4>");
+            location.push([this.name,this.location.lat,this.location.lng])
         });
        $.each(platformResponse.venues,function(index,value){
         $(".platformBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
-        $(".platformBox").append("<h4>" +this.locations.address+ "</h4>");
-        locations.push([this.name,this.locations.lat,this.locations.lng])
+        $(".platformBox").append("<h4>" +this.location.address+ "</h4>");
+        location.push([this.name,this.location.lat,this.location.lng])
        })
-        console.log(locations);
+        console.log(location);
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 12,
@@ -49,15 +49,15 @@ userSearch = ""
 
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) { 
+    for (i = 0; i < location.length; i++) { 
       marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        position: new google.maps.LatLng(location[i][1], location[i][2]),
         map: map
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-          infowindow.setContent(locations[i][0]);
+          infowindow.setContent(location[i][0]);
           infowindow.open(map, marker);
         }
       })(marker, i));
