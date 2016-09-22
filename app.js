@@ -32,7 +32,7 @@ userSearch = ""
         $(".trainstationBox").append("<h4>" +this.location.address+ "</h4>");
             locations.push([this.name,this.location.lat,this.location.lng])
         });
-       $.each(platformResponse.venues,function(index,value){
+       $.each(PlatformResponse.venues,function(index,value){
         $(".platformBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
         $(".platformBox").append("<h4>" +this.location.address+ "</h4>");
         locations.push([this.name,this.location.lat,this.location.lng])
