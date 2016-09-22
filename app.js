@@ -16,8 +16,8 @@ userSearch = ""
         console.log(platformResponse);
 
       var locations = []
-      var centerlat = myResponse.venues[0].location.lat
-      var centerlng = myResponse.venues[0].location.lng
+      var centerlat = Response.venues[0].location.lat
+      var centerlng = Response.venues[0].location.lng
       console.log(centerlat);
       console.log(centerlng);
 
