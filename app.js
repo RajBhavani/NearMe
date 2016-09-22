@@ -38,8 +38,8 @@ userSearch = ""
         locations.push([this.name,this.location.lat,this.location.lng])
        })
         console.log(locations);
-
-    var map = new google.maps.Map(document.getElementById('map'), {
+        
+         var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 12,
       center: new google.maps.LatLng(centerpoint,centerlat),
       mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -70,7 +70,7 @@ userSearch = ""
 $(document).ready(function() {
     $("#citysearch").click(function(){
         userSearch = $("#placesearch").val();
-        if ($(".trainBox:has(h4)")) {
+        if ($(".museumBox:has(h4)")) {
             $("h4").html("");
             getSites()
         }
@@ -85,4 +85,4 @@ $(document).ready(function() {
 });
 
 
-   
+
