@@ -3,15 +3,15 @@ userSearch = ""
 
 
     //Train Station
-        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=8000&categoryId=4bf58dd8d48988d129951735&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(data){
+        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=10000&categoryId=4bf58dd8d48988d129951735&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(data){
         var myResponse = (data.response);
         console.log(myResponse);
        //TrainAvaliability
-        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=8000&categoryId=4bf58dd8d48988d12a951735&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(train){
+        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=10000&categoryId=4bf58dd8d48988d12a951735&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(train){
         var Response = (train.response);
         console.log(Response);
 //Platform
-        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=8000&categoryId=4f4531504b9074f6e4fb0102&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(platform){
+        $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=10000&categoryId=4f4531504b9074f6e4fb0102&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(platform){
         var PlatformResponse = (platform.response);
         console.log(PlatformResponse);
 
