@@ -16,10 +16,10 @@ userSearch = ""
         console.log(platformResponse);
 
       var locations = []
-      var centerpoint = myResponse.venues[0].location.lat
-      var centerlat = myResponse.venues[0].location.lng
-      console.log(centerpoint);
+      var centerlat = myResponse.venues[0].location.lat
+      var centerlng = myResponse.venues[0].location.lng
       console.log(centerlat);
+      console.log(centerlng);
 
       $.each(Response.venues,function(index,value){
         $(".trainBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
