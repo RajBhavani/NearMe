@@ -12,8 +12,8 @@ userSearch = ""
         console.log(Response);
 //Platform
         $.getJSON("https://api.foursquare.com/v2/venues/search?v=20131016&near="+userSearch+"&intent=browse&radius=10000&categoryId=4f4531504b9074f6e4fb0102&client_id=1FK5WICU4PWL15FW2MOWLXGFE3IXN5ILH2R1NYLWJ1DCW2ZK&client_secret=BQIULM0LQSCHYXKKEEEF3FRRANDBQQG0ML5KY2214M3XS51A", function(platform){
-        var PlatformResponse = (platform.response);
-        console.log(PlatformResponse);
+        var platformResponse = (platform.response);
+        console.log(platformResponse);
 
       var locations = []
       var centerpoint = myResponse.venues[0].location.lat
