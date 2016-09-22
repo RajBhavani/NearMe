@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Station </title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0">
+   
+</head>
+<body>
+	<h1 class="title">Stadium Directory </h1>
+	<h3 id="instructions"> Enter a city name to find sites of interest! </h3>
+	
+	<input type="text" placeholder='Enter a city name' name="placesearch" id="placesearch">
+	<input type="submit" value="Submit" id="citysearch"><br>
+	
+
+ 	<div id="map">
+	</div>
+	<div class="wrapper">
+	<div class='trainBox'>
+		<h2> Train</h2>
+	</div>
+	<div class='platformBox'>
+		<h2>Platform </h2>
+	</div>
+	<div class='trainstationBox'>
+		<h2> Train Station </h2>
+	</div>
+</div>
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 46.35744, lng: -61.26317},
+          zoom: 13
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeNCB3fWuBxqFqx9SsgGvLdaRYUAryR8k&callback=initMap"
+    async defer></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="app.js"></script>
+</body>
+<footer>
+	<a href="https://foursquare.com/" target=blank> Locations powered by Foursquare </a>
+	</footer>
+</html>

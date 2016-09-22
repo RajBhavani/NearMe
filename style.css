@@ -1,0 +1,76 @@
+body {
+	text-align:center;
+	background-color:#CBE6A3;
+	box-sizing:border-box;
+}
+
+.title {
+	font-family:'Comic Sans MS', sans-serif;
+	font-size:2em;
+}
+
+#instructions {
+	font-family:'Comic Sans MS', sans-serif;
+	font-size:1.5em;
+}
+
+h2{
+	font-family:'Comic Sans MS', sans-serif;
+}
+
+#map {
+        height: 100%;
+        height: 400px; 
+        width: 75%;
+        float:left;
+    }
+
+.placeName {
+	font-size:1.5em;
+	text-decoration: underline;
+   }
+
+.latlong {
+	font-size:1em;
+}
+
+#placesearch {
+	margin:0 auto;
+	max-width:100px;
+	margin-bottom:2em;
+}
+
+footer {
+	text-align: center;
+	width:100%;
+	float:left;
+}
+
+.trainBox {
+	text-align: center;
+	display:block;
+	width:100%;
+	float:right;
+}
+
+.platformBox {
+	text-align: center;
+	display:block;
+	width:100%;
+	float:right;
+}
+
+.trainstationBox {
+	text-align: center;
+display:block;
+	width:100%;
+	float:right;
+}
+
+.wrapper{
+	float:right;
+	width:25%;
+	max-height:400px;
+	overflow-y:scroll;
+
+}
