@@ -7,6 +7,14 @@ body {
 .title {
 	font-family:'Comic Sans MS', sans-serif;
 	font-size:2em;
+	color: lightblue;
+	-webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color: black;
+	
+	text-align: center;
+	background-size: 10% 20%;
+	
+}
 }
 
 #instructions {
