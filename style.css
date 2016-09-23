@@ -21,7 +21,7 @@ body {
 }
 
 h2{
-	font-family: 'fantasy', sans-serif;
+	font-family: fantasy;
 }
 
 #map {
@@ -43,7 +43,7 @@ h2{
 #placesearch {
 	margin:0 auto;
 	max-width:400px;
-	margin-bottom:2em;
+	margin-bottom:4em;
 }
 
 footer {
