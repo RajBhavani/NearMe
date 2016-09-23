@@ -13,8 +13,6 @@ body {
 	
 	text-align: center;
 	background-size: 10% 20%;
-	
-}
 }
 
 #instructions {
@@ -44,7 +42,7 @@ h2{
 
 #placesearch {
 	margin:0 auto;
-	max-width:100px;
+	max-width:200px;
 	margin-bottom:2em;
 }
 
