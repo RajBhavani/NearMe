@@ -1,1 +1,1 @@
-This App is fully focus on Train station. Based on that we try  to  search Platform Number and address and Train Address will be display .This app is responsive .Its user friendly
+This App is fully focus on Train station. Based on that we try  to  search Platform Number and address and Train Address will be display .This app is responsive .Its user friendly.I am using Foursquare Client Id and Client Secert Number and conjuction with Google map API Key also
