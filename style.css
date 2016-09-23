@@ -1,3 +1,7 @@
+.box:hover {
+  background: #ff7b29;
+}
+
 body {
 	text-align:center;
 	background-color:#CBE6A3;
