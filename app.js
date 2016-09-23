@@ -15,14 +15,14 @@ userSearch = ""
         var platformResponse = (platform.response);
         console.log(platformResponse);
 
-      var locations = []
-      var centerpoint = myResponse.venues[0].location.lat
-      var centerlat = myResponse.venues[0].location.lng
+      var locations = [];
+      var centerpoint = myResponse.venues[0].location.lat;
+      var centerlat = myResponse.venues[0].location.lng;
       console.log(centerpoint);
       console.log(centerlat);
 
       $.each(Response.venues,function(index,value){
-        $(".trainBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>")
+        $(".trainBox").append("<h4 style='text-decoration:underline'>"+this.name+"<h4>");
         $(".trainBox").append("<h4>" +this.location.address+ "</h4>");
         locations.push([this.name,this.location.lat,this.location.lng]);
       })
